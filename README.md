@@ -1,2 +1,2 @@
 # CodingPola
-Coding untuk mencetak pola tertentu dalam bahasa bahasa pemrograman C.
+Coding untuk mencetak pola tertentu dalam bahasa pemrograman C.
