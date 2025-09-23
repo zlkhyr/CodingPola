@@ -1,5 +1,15 @@
 #include <stdio.h>
 
+void segi4(int panjang, int lebar){
+	for (int i = 0; i < lebar; ++i){
+		for (int i = 0; i < panjang; ++i)
+		{
+			printf("* ");
+		}
+		printf("\n");
+	}
+}
+
 void segi3kanan(int baris){
 	for (int i = 0; i < baris; i++){
 		for (int j = 0; j <= i; j++){
@@ -36,6 +46,6 @@ void segi3(int baris){
 }
 
 int main(){
-	segi3(10);
+	segi4(10,5);
 	return 0;
 }
