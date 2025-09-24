@@ -22,7 +22,7 @@ void segi3kanan(int baris){
 void segi3kiri(int baris){
 	for (int i = 0; i < baris; i++){
 		for (int j = 0; j < (baris-i-1); j++){
-			printf("  ");
+			printf("  "); //2 spasi
 		}
 		for (int k = 0; k < i; k++)
 		{
@@ -32,12 +32,12 @@ void segi3kiri(int baris){
 	}
 }
 
-void segi3(int baris){
+void segi3full(int baris){
 	for (int i = 0; i < baris; i++){
-		for (int j = 0; j < (baris-i-1); j++){
+		for (int j = 0; j < 2* (baris-i)-1; j++){
 			printf(" ");
 		}
-		for (int k = 0; k < i; k++)
+		for (int k = 0; k < 2* i+1; k++)
 		{
 			printf("* ");
 		}
@@ -46,6 +46,8 @@ void segi3(int baris){
 }
 
 int main(){
-	segi4(10,5);
+	
+	segi3full(10);
+
 	return 0;
 }
