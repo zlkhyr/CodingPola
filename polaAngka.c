@@ -31,9 +31,20 @@ void segi3kiri(int baris){
 	}
 }
 
-int main(){
-	segi3kanan(5);
-	segi3kiri(5);
+void segi3full(int baris){
+	for (int i = 0; i < baris; i++){
+		for (int j = 0; j < 2* (baris-i-1); j++){
+			printf(" ");
+		}
+		for (int k = 0; k < 2*i+1; k++)
+		{
+			printf("%d ", k+1);
+		}
+		printf("\n");
+	}
+}
 
+int main(){
+	segi3full(5);
 	return 0;
 }
